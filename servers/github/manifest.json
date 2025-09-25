@@ -1,0 +1,12 @@
+{
+  "id": "github",
+  "name": "GitHub MCP Server",
+  "description": "Provides Copilot with access to GitHub repositories, issues, pull requests, and Actions.",
+  "run": {
+    "type": "http",
+    "url": "https://api.githubcopilot.com/mcp/"
+  },
+  "categories": ["code", "devops", "github"],
+  "version": "1.0.0",
+  "release_date": "2025-09-01T00:00:00Z"
+}
