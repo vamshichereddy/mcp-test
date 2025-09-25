@@ -1,0 +1,12 @@
+{
+  "servers": [
+    {
+      "id": "github",
+      "name": "GitHub MCP Server",
+      "description": "Tools and resources for GitHub repos, issues, PRs, and Actions.",
+      "manifest_url": "https://symmetrical-spoon-mw9yv95.pages.github.io/servers/github/manifest.json"
+    }
+  ],
+  "total_count": 1,
+  "updated_at": "2025-09-24T23:00:00Z"
+}
