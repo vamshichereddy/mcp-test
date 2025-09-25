@@ -4,7 +4,7 @@
       "id": "github",
       "name": "GitHub MCP Server",
       "description": "Tools and resources for GitHub repos, issues, PRs, and Actions.",
-      "manifest_url": "https://symmetrical-spoon-mw9yv95.pages.github.io/servers/github/manifest.json"
+      "manifest_url": "https://vamshichereddy.github.io/mcp-test/servers/github/manifest.json"
     }
   ],
   "total_count": 1,
