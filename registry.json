@@ -1,31 +1,9 @@
 {
   "servers": [
     {
-      "_meta": {
-        "io.modelcontextprotocol.registry/official": {
-          "status": "active",
-          "publishedAt": "2025-10-28T00:00:00Z",
-          "isLatest": true
-        }
-      },
-      "server": {
-        "$schema": "https://static.modelcontextprotocol.io/schemas/2025-10-17/server.schema.json",
-        "name": "playwright",
-        "description": "Official Playwright MCP server for browser automation and testing",
-        "version": "latest",
-        "packages": [
-          {
-            "registryType": "npm",
-            "identifier": "@playwright/mcp",
-            "version": "latest",
-            "transport": { "type": "stdio" }
-          }
-        ]
-      }
+      "identifier": "@playwright/mcp",
+      "name": "playwright",
+      "type": "stdio"
     }
-  ],
-  "metadata": {
-    "count": 1,
-    "nextCursor": null
-  }
+  ]
 }
