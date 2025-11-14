@@ -1,9 +1,26 @@
 {
   "servers": [
     {
-      "identifier": "@playwright/mcp",
-      "name": "playwright",
-      "type": "stdio"
+      "id": "github",
+      "name": "GitHub MCP Server",
+      "description": "Official GitHub MCP server for repository, issue, and pull request management",
+      "manifest_url": "https://github.com/github/github-mcp-server",
+      "categories": ["code", "devops", "github", "vcs"],
+      "version": "1.0.0",
+      "release_date": "2025-11-14T00:00:00Z",
+      "latest": true
+    },
+    {
+      "id": "playwright",
+      "name": "Playwright MCP Server",
+      "description": "Official Playwright MCP server for browser automation and testing",
+      "manifest_url": "https://github.com/microsoft/playwright-mcp",
+      "categories": ["testing", "automation", "browser", "devtools"],
+      "version": "1.0.0",
+      "release_date": "2025-11-14T00:00:00Z",
+      "latest": true
     }
-  ]
+  ],
+  "total_count": 2,
+  "updated_at": "2025-11-14T00:00:00Z"
 }
