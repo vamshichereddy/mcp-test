@@ -2,36 +2,6 @@
   "servers": [
     {
       "$schema": "https://static.modelcontextprotocol.io/schemas/2025-10-17/server.schema.json",
-      "name": "io.github.github/mcp-server",
-      "title": "GitHub",
-      "description": "Official GitHub MCP server for repository, issue, and pull request management",
-      "repository": {
-        "url": "https://github.com/github/github-mcp-server",
-        "source": "github"
-      },
-      "version": "0.6.2",
-      "packages": [
-        {
-          "registryType": "npm",
-          "registryBaseUrl": "https://registry.npmjs.org",
-          "identifier": "@modelcontextprotocol/server-github",
-          "version": "0.6.2",
-          "transport": {
-            "type": "stdio"
-          },
-          "environmentVariables": [
-            {
-              "name": "GITHUB_PERSONAL_ACCESS_TOKEN",
-              "description": "GitHub Personal Access Token for API authentication",
-              "isRequired": true,
-              "isSecret": true
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "$schema": "https://static.modelcontextprotocol.io/schemas/2025-10-17/server.schema.json",
       "name": "io.github.microsoft/playwright-mcp",
       "title": "Playwright",
       "description": "Official Playwright MCP server for browser automation and testing",
