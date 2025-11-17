@@ -1,26 +1,56 @@
 {
   "servers": [
     {
-      "id": "github",
-      "name": "GitHub MCP Server",
+      "$schema": "https://static.modelcontextprotocol.io/schemas/2025-10-17/server.schema.json",
+      "name": "io.github.github/mcp-server",
+      "title": "GitHub",
       "description": "Official GitHub MCP server for repository, issue, and pull request management",
-      "manifest_url": "https://github.com/github/github-mcp-server",
-      "categories": ["code", "devops", "github", "vcs"],
-      "version": "1.0.0",
-      "release_date": "2025-11-14T00:00:00Z",
-      "latest": true
+      "repository": {
+        "url": "https://github.com/github/github-mcp-server",
+        "source": "github"
+      },
+      "version": "0.6.2",
+      "packages": [
+        {
+          "registryType": "npm",
+          "registryBaseUrl": "https://registry.npmjs.org",
+          "identifier": "@modelcontextprotocol/server-github",
+          "version": "0.6.2",
+          "transport": {
+            "type": "stdio"
+          },
+          "environmentVariables": [
+            {
+              "name": "GITHUB_PERSONAL_ACCESS_TOKEN",
+              "description": "GitHub Personal Access Token for API authentication",
+              "isRequired": true,
+              "isSecret": true
+            }
+          ]
+        }
+      ]
     },
     {
-      "id": "playwright",
-      "name": "Playwright MCP Server",
+      "$schema": "https://static.modelcontextprotocol.io/schemas/2025-10-17/server.schema.json",
+      "name": "io.github.microsoft/playwright-mcp",
+      "title": "Playwright",
       "description": "Official Playwright MCP server for browser automation and testing",
-      "manifest_url": "https://github.com/microsoft/playwright-mcp",
-      "categories": ["testing", "automation", "browser", "devtools"],
-      "version": "1.0.0",
-      "release_date": "2025-11-14T00:00:00Z",
-      "latest": true
+      "repository": {
+        "url": "https://github.com/microsoft/playwright-mcp",
+        "source": "github"
+      },
+      "version": "0.2.0",
+      "packages": [
+        {
+          "registryType": "npm",
+          "registryBaseUrl": "https://registry.npmjs.org",
+          "identifier": "@microsoft/mcp-server-playwright",
+          "version": "0.2.0",
+          "transport": {
+            "type": "stdio"
+          }
+        }
+      ]
     }
-  ],
-  "total_count": 2,
-  "updated_at": "2025-11-14T00:00:00Z"
+  ]
 }
